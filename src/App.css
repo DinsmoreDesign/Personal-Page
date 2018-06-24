@@ -297,6 +297,9 @@ header h1 {
     font-size: 59px;
     line-height: 59px;
   }
+  .first-header {
+    padding-top: 6.5em !important;
+  }
 }
 hr {
   margin-top: 3rem;
@@ -321,11 +324,13 @@ hr {
   .timeline {
     border-right: 1px solid #F9CE06;
     /*min-height: 250px;*/
-    padding-bottom: 130px
+    padding-bottom: 100%;
+    margin-bottom: -100%;
   }
 
   .timeline h4 {
     text-align: left;
+    padding-top: 0.5em;
   }
 
   .timeline:after {
@@ -760,4 +765,14 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 }
 .floating-button:hover {
   background-color: #F9CE06;
+}
+header .description {
+  padding-top: 2em;
+  padding-bottom: 0;
+}
+.experience ul {
+  padding-left: 1em;
+}
+.row {
+  overflow: hidden;
 }
