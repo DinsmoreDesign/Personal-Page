@@ -4,8 +4,7 @@ import Header from '../components/resume/Header';
 import Experience from '../components/resume/Experience';
 import Education from '../components/resume/Education';
 import Skills from '../components/resume/Skills';
-import Awards from '../components/resume/Awards';
-import Footer from '../components/resume/Footer';
+import Contact from '../components/resume/Contact';
 
 class Resume extends Component {
 
@@ -62,7 +61,25 @@ class Resume extends Component {
                 distinction: 'Magna Cum Laude'
             },
             skills: [ 'HTML', 'CSS / SASS', 'JavaScript', 'PhotoShop', 'Illustrator', 'InDesign', 'Sketch', 'SEO', 'Git' ],
-            technologies: [ 'jQuery', 'Vue.js', 'React', 'Node.js', 'Meteor.js', 'MongoDB', 'MySQL', 'Ubuntu', 'WordPress', 'PageKit', 'Ghost', 'Bootstrap', 'Materialize', 'Foundation', 'UIKit' ]
+            technologies: [ 'jQuery', 'Vue.js', 'React', 'Node.js', 'Meteor.js', 'MongoDB', 'MySQL', 'Ubuntu', 'WordPress', 'PageKit', 'Ghost', 'Bootstrap', 'Materialize', 'Foundation', 'UIKit' ],
+            awards: [
+                {
+                    company: 'Award of Excellence: Branding Image Package',
+                    timeline: '2015',
+                    title: 'KinderU Branding Initiative',
+                    description: [
+                        'National School Public Relations Association'
+                    ]
+                },
+                {
+                    company: 'Award of Excellence: Marketing Publication',
+                    timeline: '2014',
+                    title: 'East Valley Academy Gatefold Brochure',
+                    description: [
+                        'National School Public Relations Association'
+                    ]
+                }
+            ]
         };
     }
 
@@ -110,8 +127,19 @@ class Resume extends Component {
                 </div>
                 <div className="container">
 
-                    <Awards/>
-                    <Footer/>
+                    {this.state.awards.map((item, index) =>
+                        <Experience
+                            hasBorder={ true }
+                            index={ index }
+                            header="Awards"
+                            timeline={ item.timeline }
+                            company={ item.company }
+                            title={ item.title }
+                            description={ item.description }
+                            key={ index }
+                        />
+                    )}
+                    <Contact/>
 
                 </div>
 

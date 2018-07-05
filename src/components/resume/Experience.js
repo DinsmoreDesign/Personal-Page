@@ -11,7 +11,7 @@ class Experience extends React.Component {
 
     render() {
         return (
-            <div className="experience">
+            <div className={ this.props.hasBorder === true ? 'awards' : 'experience' }>
                 <div className="row">
                     <div className="four columns timeline">
                         { this.state.header }
@@ -22,13 +22,13 @@ class Experience extends React.Component {
                             { this.props.company }
                         </h2>
                         <h3>
-                            { this.props.title } <small>| { this.props.subtitle }</small>
+                            { this.props.title }<small>{ this.props.subtitle ? ' | ' + this.props.subtitle : '' }</small>
                         </h3>
-                        {this.props.description.map((item, index) =>
-                            <ul key={ index }>
-                                <li>{ item }</li>
-                            </ul>
-                        )}
+                        <ul>
+                            {this.props.description.map((item, index) =>
+                                <li key={ index }>{ item }</li>
+                            )}
+                        </ul>
                     </div>
                 </div>
             </div>

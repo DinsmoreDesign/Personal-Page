@@ -1,14 +1,14 @@
 import React from 'react';
 
-class Footer extends React.Component {
+class Contact extends React.Component {
     render() {
         return (
-            <footer>
+            <div className="contact">
                 Derek Dinsmore | derek@dinsmoredesign.com | (480) 246-1596
-            </footer>
+            </div>
         )
     }
 };
 
-export default Footer;
+export default Contact;
 

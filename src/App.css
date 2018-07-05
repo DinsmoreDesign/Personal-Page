@@ -353,13 +353,13 @@ hr {
 .skills,
 .education,
 .technologies,
-footer {
+.contact {
   border-top: 1px solid #F9CE06;
   padding: 35px 0;
 }
-.awards.row:first-of-type {
+.awards:first-of-type {
   border-top: 1px solid #F9CE06;
-  margin-top: 0 !important;
+  padding-top: 30px;
 }
 .skills span, .technologies span {
   padding: 5px 10px;
@@ -370,7 +370,7 @@ footer {
   text-align: center;
 }
 
-footer {
+.contact {
   text-align: center;
 }
 .drop-cap {
@@ -753,7 +753,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   cursor: pointer;
 }
 .floating-button a {
-  color: #FFF;
+  color: #F9CE06;
   position: absolute;
   left: 0;
   right: 0;
@@ -763,6 +763,9 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   animation: plus-out 0.3s;
   transition: all 0.3s;
 }
+.floating-button a:hover {
+  color: #333;
+}
 .floating-button:hover {
   background-color: #F9CE06;
 }
@@ -770,8 +773,20 @@ header .description {
   padding-top: 2em;
   padding-bottom: 0;
 }
+.experience ul,
+.awards ul {
+  margin: 0;
+}
 .experience ul {
   padding-left: 1em;
+}
+.awards ul {
+  padding-left: 0;
+  list-style: none;
+}
+.experience li:last-child,
+.awards li:last-child {
+  padding-bottom: 35px;
 }
 .row {
   overflow: hidden;
