@@ -5,6 +5,7 @@ import Experience from '../components/resume/Experience';
 import Education from '../components/resume/Education';
 import Skills from '../components/resume/Skills';
 import Contact from '../components/resume/Contact';
+import Footer from '../components/resume/Footer';
 
 class Resume extends Component {
 
@@ -124,8 +125,6 @@ class Resume extends Component {
                         />
                         
                     </div>
-                </div>
-                <div className="container">
 
                     {this.state.awards.map((item, index) =>
                         <Experience
@@ -139,9 +138,18 @@ class Resume extends Component {
                             key={ index }
                         />
                     )}
-                    <Contact/>
 
                 </div>
+
+                <Contact
+                    email="derek@dinsmoredesign.com"
+                    phone="480.246.1596"
+                />
+                <Footer
+                    githubProfile="DinsmoreDesign"
+                    mediumProfile="paintballthunder2000"
+                    personalSite="https://dinsmoredesign.com/"
+                />
 
             </div>
         );

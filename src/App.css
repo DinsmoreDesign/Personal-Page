@@ -357,10 +357,6 @@ hr {
   border-top: 1px solid #F9CE06;
   padding: 35px 0;
 }
-.awards:first-of-type {
-  border-top: 1px solid #F9CE06;
-  padding-top: 30px;
-}
 .skills span, .technologies span {
   padding: 5px 10px;
   background-color: #F9CE06;
@@ -369,9 +365,15 @@ hr {
   display: inline-block;
   text-align: center;
 }
-
 .contact {
   text-align: center;
+  background: rgba(249,206,6, .2);
+  font-size: 1.75rem;
+}
+.contact i {
+  font-size: 2rem;
+  color: #F9CE06;
+  padding-right: 1rem;
 }
 .drop-cap {
   float: left;
@@ -458,6 +460,55 @@ p {
   float: left;
   box-sizing: border-box;
 }
+  .one.column.mobile,
+  .one.columns.mobile {
+    width: 4.66667%;
+  }
+
+  .two.columns.mobile {
+    width: 13.33333%;
+  }
+
+  .three.columns.mobile {
+    width: 22%;
+  }
+
+  .four.columns.mobile {
+    width: 30.66667%;
+  }
+
+  .five.columns.mobile {
+    width: 39.33333%;
+  }
+
+  .six.columns.mobile {
+    width: 48%;
+  }
+
+  .seven.columns.mobile {
+    width: 56.66667%;
+  }
+
+  .eight.columns.mobile {
+    width: 65.33333%;
+  }
+
+  .nine.columns.mobile {
+    width: 74%;
+  }
+
+  .ten.columns.mobile {
+    width: 82.66667%;
+  }
+
+  .eleven.columns.mobile {
+    width: 91.33333%;
+  }
+
+  .twelve.columns.mobile {
+    width: 100%;
+    margin-left: 0;
+  }
 
 @media (min-width: 1000px) {
   .columns:first-child {
@@ -773,6 +824,14 @@ header .description {
   padding-top: 2em;
   padding-bottom: 0;
 }
+.awards {
+  border-top: 1px solid #F9CE06;
+  padding-top: 30px;
+}
+  .awards ~ .awards {
+    border-top: none;
+    padding-top: 0;
+  }
 .experience ul,
 .awards ul {
   margin: 0;
@@ -790,4 +849,18 @@ header .description {
 }
 .row {
   overflow: hidden;
+}
+footer {
+  background: #333;
+  padding: 35px 0;
+  color: #FFF;
+  text-align: center;
+}
+footer a,
+footer i {
+  color: #FFF;
+  font-size: 4.5rem;
+}
+footer a:hover {
+  opacity: 0.7;
 }

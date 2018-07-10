@@ -21,9 +21,6 @@ class Header extends React.Component {
                             <h3>
                                 { this.props.title }
                             </h3>
-                            <div className="description">
-                                { this.props.description }
-                            </div>
                         </div>
                     </div>
                 </div>
