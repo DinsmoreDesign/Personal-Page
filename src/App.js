@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-import Resume from './views/Resume';
+import './assets/Shared.css';
+
+import AppRoutes from './routes';
 import MenuButton from './components/menu/MenuButton';
 import MenuContainer from './components/menu/MenuContainer';
-
-import 'font-awesome/css/font-awesome.min.css';
-import './App.css';
 
 class App extends Component {
 
@@ -21,12 +20,17 @@ class App extends Component {
         if ( !this.state.showMenu ) {
             return (
                 <div>
-                    <Resume/>
                     <MenuButton/>
+                    <AppRoutes/>
                 </div>
             )
         } else {
-            return <MenuContainer/>
+            return (
+                <div>
+                    <MenuContainer/>
+                    <AppRoutes/>
+                </div>
+            )
         }
 
     }

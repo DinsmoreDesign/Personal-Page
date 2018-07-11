@@ -254,6 +254,7 @@ header {
   margin-bottom: 2em;
   color: #ffffff;
 }
+
 header .pic {
   text-align: center;
 }
@@ -803,23 +804,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   right: 30px;
   cursor: pointer;
 }
-.floating-button a {
-  color: #F9CE06;
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  line-height: 55px;
-  font-size: 25px;
-  animation: plus-out 0.3s;
-  transition: all 0.3s;
-}
-.floating-button a:hover {
-  color: #333;
-}
-.floating-button:hover {
-  background-color: #F9CE06;
-}
+
 header .description {
   padding-top: 2em;
   padding-bottom: 0;

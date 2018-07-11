@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import 'font-awesome/css/font-awesome.min.css';
+import '../assets/Resume.css';
+
 import Header from '../components/resume/Header';
 import Experience from '../components/resume/Experience';
 import Education from '../components/resume/Education';
